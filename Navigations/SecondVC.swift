@@ -12,5 +12,8 @@ class SecondVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    @IBAction func navigateToThirdVC(_ sender: UIButton) {
+        performSegue(withIdentifier: "thirdVC", sender: nil)
+    }
+    
 }
